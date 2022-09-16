@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#array {
+  width: 470px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.title {
+  width: 450px;
+  height: 270px;
+  margin: 0 auto;
+  font-size: 100px;
+  color: #fff;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  outline: 0;
+  border: 0;
+  background: #fff;
+  color: #000;
+  width: 140px;
+  height: 50px;
+  line-height: 30px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all .2s ease;
+  margin-top: 50px;
+}
+
+button:hover {
+  background: #ffffff95;
+}
+
+button:active {
+  background: #222;
+}
+
+.num {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  float: left;
+  font-size: 25px;
+  margin-top: 25px;
+}
+
+.bubble {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #ccc;
+  float: left;
+  border-radius: 50%;
+}
+
+.holder {
+  width: 500px;
+  height: 170px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+@keyframes numLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes numRight {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+
+/* 
+.bubble .num:nth-child(1) {
+  animation: numLeft 1s ease; 
+}
+.bubble .num:nth-child(2) {
+  animation: numLeft 1s ease; 
+}
+.bubble {
+  animation: numRight 1s ease;  
+} */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+.flex-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 800px) {
+  .flex-box {
+    padding: 25px;
+  }
+}
+h1 {
+  color: #fff;
+  font-size: 5.5em;
+  line-height: 1.25;
+  text-align: center;
+}
+h3 {
+  color: #efeffe;
+  opacity: 0.7;
+  font-weight: 300;
+  font-style: italic;
+}
+h3 :after {
+  content: "\005f";
+}
+h5 {
+  color: #efeffe;
+  font-size: 2em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+h5:after {
+  content: "";
+  position: relative;
+  display: block;
+  padding-bottom: 5px;
+  width: 100%;
+  border-bottom: 2px solid #fff;
+}
+.passcode-area {
+  margin-top: 50px;
+  text-align: center;
+}
+.passcode-area > input {
+  background-color: #fff;
+  border: 2px solid #d6d6d6;
+  border-radius: 4px;
+  padding: 0;
+  margin: 25px 6px 0;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 1.29;
+  text-transform: uppercase;
+  background-clip: padding-box;
+}
+
+
+.passcode-area > input:focus {
+  -webkit-appearance: none;
+  border: 2px solid skyblue;
+  outline: 0;
+  box-shadow: 0px 0px 3px rgba(131, 192, 253, 0.5);
+}
