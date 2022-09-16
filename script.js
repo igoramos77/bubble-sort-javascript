@@ -121,3 +121,22 @@ function result() {
   document.querySelector("#section1").style.display = 'none';
   document.querySelector("#section2").style.display = 'block';
 }
+
+
+const btnOpenEl = document.querySelector(".btn-modal-open");
+const btnCloseEl = document.querySelector(".btn-modal-close");
+console.log(btnCloseEl);
+const modal = document.getElementById("overlay");
+
+
+btnOpenEl.addEventListener("click", openModal);
+
+btnCloseEl.addEventListener("click", closeModal)
+
+function openModal(){
+	modal.style.display = "block";
+}
+
+function closeModal(){
+	modal.style.display = "none";
+}
