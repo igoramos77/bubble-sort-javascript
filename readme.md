@@ -5,7 +5,8 @@
 - Médio caso O(n²)
 - Pior caso O(n²)
 
-Implementação em javascript:
+**Implementação em javascript:**
+
 ```
 const bubbleSort = (arr: number[]): number[] => {
     const len = arr.length;
